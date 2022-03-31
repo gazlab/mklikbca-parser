@@ -31,16 +31,13 @@ module.exports = {
     try {
       let resp;
       if (await parser.login(username, password)) {
-        console.log("Berhasil Login");
         resp = {
           balance: await parser.getSaldo(),
           settlement: await parser.getMutasiRekening(),
         };
       }
 
-      if (await parser.logout()) {
-        console.log("Berhasil Logout");
-      }
+      await parser.logout()
       return resp;
     } catch (error) {
       console.error(`${error}`);
