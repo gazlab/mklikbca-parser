@@ -1,0 +1,30 @@
+{
+  "name": "mklikbca-parser",
+  "version": "1.0.0",
+  "description": "Plugin untuk mendapatkan saldo terakhir dan mutasi rekening BCA via m.klikbca.com tanpa menggunakan official API dari Bank BCA.",
+  "main": "index.js",
+  "keywords": [
+    "bankbca",
+    "klikbca",
+    "mobile",
+    "banking",
+    "saldo",
+    "mutasi",
+    "rekening",
+    "settlement",
+    "balance",
+    "bca"
+  ],
+  "author": "Sony K. <sony.kusyana@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "axios-cookiejar-support": "^2.0.4",
+    "dayjs": "^1.11.0",
+    "qs": "^6.10.3",
+    "tough-cookie": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
